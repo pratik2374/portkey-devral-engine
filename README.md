@@ -76,8 +76,19 @@ Edit `plans/week-X.md` with your content schedule.
 
 ### 3. Run the engine
 Open this project in an AI coding assistant (Claude Code, Cursor, etc.) and say:
-```
-Read plans/week-1.md and topics/week-1-topics.md, then generate all content files to output/week-1/
+```text
+/read DEVRAL_SKILL.md
+
+Adopt the Portkey DevRel Content Engine persona as defined in DEVRAL_SKILL.md.
+
+Your objective is to generate all content for Week 1. 
+
+1. Start by reading `plans/week-1.md` and `topics/week-1-topics.md`.
+2. Create your `task.md` checklist.
+3. Begin the strict "Content Generation Loop". 
+   - CRITICAL: For EVERY single piece of content, you MUST use `view_file` to read the specific template in the `templates/` directory BEFORE writing the content. Read the template -> generate the high-quality content -> save the file -> repeat. Do not rely on memory for template structures.
+4. Ensure every output is deeply descriptive, highly detailed, and actively mentions our 2026 milestones ($15M Series A, 125M daily requests, Gartner Cool Vendor, AgentKit, etc.) where appropriate. 
+5. Wait for no further input; execute step-by-step and generate all files for Week 1.
 ```
 
 ### 4. Review & publish
@@ -91,6 +102,44 @@ All generated content lands in `output/week-X/` organized by format.
 - **Platform-optimized** (character limits, hashtags, carousels)
 - **Brand-consistent** voice across all content
 - **Production-focused** messaging (reliability, observability, scale)
+
+## 📦 Recent Outputs: Week 1
+
+The Content Engine successfully generated the following production-ready assets for Week 1 (Focus: Getting Started & AI Gateway Reliability):
+
+```text
+output/week-1/
+├── blogs/
+│   ├── coding/
+│   │   └── 5-semantic-caching-tutorial.md
+│   └── technical/
+│       ├── 1-fallbacks-blog.md
+│       └── 2-cost-optimization-blog.md
+├── cookbooks/
+│   ├── 1-fallbacks.ipynb
+│   ├── 2-observability.ipynb
+│   ├── 3-enterprise-guardrails.ipynb
+│   ├── 4-openai-agentkit.ipynb
+│   └── 6-getting-started.ipynb
+├── guides/
+│   └── python-integration-guide.md
+├── linkedin/
+│   ├── 1-retries-timeouts-linkedin.md
+│   ├── 2-cost-optimization-linkedin.md
+│   ├── 4-crewai-integration-linkedin.md
+│   ├── 5-semantic-caching-linkedin.md
+│   └── 6-getting-started-linkedin.md
+├── snippets/
+│   └── 6-getting-started-snippets.md
+└── tweets/
+    ├── 1-fallbacks-tweet.md
+    ├── 2-load-balancing-tweet.md
+    ├── 2-observability-tweet.md
+    ├── 3-enterprise-guardrails-tweet.md
+    ├── 4-crewai-integration-tweet.md
+    ├── 4-openai-agentkit-tweet.md
+    └── 6-getting-started-tweet.md
+```
 
 ## 📚 Resources
 
