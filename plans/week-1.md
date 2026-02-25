@@ -9,6 +9,13 @@
 
 ## Monday — Getting Started
 
+### content 0: new model realesed
+- **Title**: Cluade Sonnet 4.6 is here — how to use it with Portkey AI Gateway
+- **Bucket**: 6. Getting Started
+- **Formats**: Tweet thread 
+- **Topics**: SDK install, Portkey client setup, first chat completion
+- **Target Audience**: Developers new to Portkey
+
 ### Content 1: Getting Started
 - **Title**: Portkey AI Gateway: Your First API Call in 2 Minutes
 - **Bucket**: 6. Getting Started
